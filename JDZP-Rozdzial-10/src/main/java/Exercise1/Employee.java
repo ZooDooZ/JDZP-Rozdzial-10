@@ -19,23 +19,16 @@ public class Employee {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getEmployeeId() {
         return employeeId;
-    }
-
-    public void setEmployeeId(String employeeId) {
-        this.employeeId = employeeId;
     }
 
     public String getDateOfEmployment() {
         return dateOfEmployment;
     }
 
-    public void setDateOfEmployment(String dateOfEmployment) {
-        this.dateOfEmployment = dateOfEmployment;
+    @Override
+    public String toString() {
+        return "Employee name: " + name + "\nEmployee ID: " + employeeId + "\nDate of employment: " + dateOfEmployment;
     }
 }
